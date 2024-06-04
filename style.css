@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.left-item {
+    font-size: 30px;
+    font-family: tahoma;
+    font-weight: bold;
+    color: wheat;
+}
+
+.left-item span {
+    color: #00d6f0;
+}
+
+nav {
+    background-color: transparent;
+    padding: 30px 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: wheat;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.right-item a {
+    color: black;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-family: tahoma;
+    text-align: center;
+}
+
+.right-item a:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.middle-items {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    padding: 0 15px;
+}
+
+.middle-items li a:hover {
+    color: aqua;
+    background: #484848;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 23px;
+    display: none;
+    cursor: pointer;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 21px -7px #008fa1;
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0px 0px 21px -7px #60ecff;
+    }
+}
+
+img {
+    width: 370px;
+    margin-left: 850px;
+    margin-top: -360px;
+    animation: float 2.5s ease-in-out infinite;
+    -webkit-animation: float 2.5s ease-in-out infinite;
+    width: 100%;
+    max-width: 370px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 21px -7px #00d6f0;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 10px;
+    }
+    .dis{
+        display: flex;
+    padding: 18px;
+    margin: 4px auto;
+    width: 106px;
+    }
+    .servs{
+        margin: 10px 0 0 0;    }
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .middle-items {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .middle-items.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list li {
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.elkalam {
+    margin: 71px;
+}
+
+.elkalam p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.elkalam span {
+    color: #00d6f0;
+}
+
+.elkalam h1 {
+    font-size: 40px;
+    color: wheat;
+}
+
+.elkalam h1 + p {
+    margin-bottom: 20px;
+}
+
+.whatsapp a {
+    text-decoration: none;
+    border: 2px solid green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 12px;
+    background-color: green;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.whatsapp a:hover {
+    background-color: rgb(0, 165, 0);
+    border: 2px solid rgb(0, 165, 0);
+}
+
+.dis {
+    display: flex;
+    padding: 20px;
+    margin: 0 14px;
+}
+
+.ins {
+    padding: 0 10px;
+}
+
+.dis a {
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 370px;
+    margin: 20px auto;
+}
+
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .elkalam {
+        flex: 1;
+        text-align: left;
+    }
+
+    .img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img img {
+        margin: 0;
+    }
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.ser{
+    background-color: #00d6f0;
+    margin: 40px;
+    width: 250px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+.ser i{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 35px 40px 10px 40px;
+    font-size: 45px;
+    color: black;
+}
+.ser p{
+    padding: 20px;
+    font-family: tahoma;
+    font-size: 20px;
+}
